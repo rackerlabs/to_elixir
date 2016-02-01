@@ -3,6 +3,7 @@
 to_elixir is a super simple Rails rake task that inspects your existing Rails application and generates a Elixir / Phoenix JSON API.
 
 ## Install
+Add `gem :to_elixir` to your `Gemfile` and run `bundle install`
 
 ## Usage
 `rake to_elixir:phoenix APP_NAME=<NAME>`
@@ -13,7 +14,7 @@ Simply run the command, wait a tick and then move the resulting folder somewhere
 Enter the new Elixir app and run `iex -S mix phoenix.server` to boot your Elixir app.
 Load up your new app at `http://localhost:4000/api/<EXISTING_RESOURCE_NAME>` and boom; simple json api.
 
-## Want some quick data in that API?
+## Want your data in that API?
 `rake to_elixir:timestamps`
 
 If you'd like to convert your existing Rails-based DB over to Phoenix just run the above command.
